@@ -1,1 +1,2 @@
-# Front_Eco-Mycloset
+# 나만의 AI 스타일리스트, FAI
+
