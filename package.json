@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "axios": "^1.1.3",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "name": "fai-eco_mycloset",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FashionAI-FAI/FashionAi-FAI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FashionAI-FAI/FashionAi-FAI/issues"
+  },
+  "homepage": "https://github.com/FashionAI-FAI/FashionAi-FAI#readme"
+}
