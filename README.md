@@ -5,8 +5,8 @@
 
 ## 프로젝트 소개
 
-![img](img\project_introduce.png)
-![img](img\project_introduce2.png)
+![img](img/project_introduce.png)
+![img](img/project_introduce2.png)
 
 
 ## 개발 환경 & 스택
