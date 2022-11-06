@@ -1,0 +1,649 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fashion AI, FAI</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="assets/images/greenFAIchar.png">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/iconfont.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/bootsnav.css">
+
+        <!--For Plugins external css-->
+        <link rel="stylesheet" href="assets/css/plugins.css" />
+
+        <!--Theme custom css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!-- Made by SeoYeon css-->
+        <link rel="stylesheet" href="assets/css/shop.css">
+
+        <!--Theme Responsive css-->
+        <link rel="stylesheet" href="assets/css/responsive.css" />
+
+        <!-- 파이 스크립트 -->
+        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+        <py-env>
+            - urllib
+            - request
+        </py-env>
+
+    </head>
+    
+    <body data-spy="scroll" data-target="#navbar-menu" data-offset="110">
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div><!--End off Preloader -->
+
+        <div class="culmn">
+            <!--Home page style-->
+
+
+            <nav class="navbar navbar-default bootsnav navbar-fixed no-background white">
+                <!-- Start Top Search -->
+                <div class="top-search">
+                    <div class="container">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Top Search -->
+
+
+                <div class="container"> 
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                    </div> 
+
+                    <!-- Start Header Navigation -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="#brand">
+                            <div class="mainLogoDiv">
+                                <img src="assets/images/greenFAIchar.png" class="ImgMainTopLogo" alt="">
+                                <img src="assets/images/greenLogo.png" class="ImgMainTopLogo" alt="">
+                            </div>
+
+                            <!-- <img src="assets/images/logo.png" class="logo" alt=""> -->
+                            <!--<img src="assets/images/footer-logo.png" class="logo logo-scrolled" alt="">-->
+                        </a>
+
+                    </div>
+                    <!-- End Header Navigation -->
+
+                    <!-- navbar menu -->
+                    <div class="collapse navbar-collapse" id="navbar-menu">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>                    
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li><a href="eco.html">Eco</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="mycloset.html">MyCloset</a></li>
+                            <!--<li><a href="#contact">Contact</a></li>-->
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div> 
+            </nav>
+
+
+            <script src="assets\js\shop.js"></script>
+
+
+            <!-- 'New Item Shop' section -->
+            <section id="product" class="product text-center">
+                <div class="container">
+                    <div class="main_product roomy-80">
+                        <div class="shop-wrap">
+                            <div class="shop-text">
+                                Shop
+                            </div>
+                            <div class="shop-image"><img src="assets/images/shop/shop1.jpg" alt=""></div>
+                        </div>
+                        
+                        <!-- <div class="shop-ment">
+                            덕성님의 취향들
+                        </div> -->
+                        <!-- <div class="nav3">
+                            <button class="nav-btn add" id="show">+</button>
+                        </div> -->
+                        <div id="new" class="head_title text-center fix">
+                            <h2 class="text-uppercase text-black">New</h2>
+                            <h5>Based on your preference</h5>
+                        </div>
+                       
+
+
+                        <!-- first -->
+                        <!-- <div id="cloth">상의</div> -->
+                        <div id="carousel-example-generic-top" class="carousel slide" data-ride="carousel">
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top1.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top1.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top2.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="aassets/images/shop/new-top2.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top3.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top3.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top4.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top4.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top5.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top5.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-top6.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top6.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- 추가된 의류 사진 들어올 곳 -->
+                                            <div class="col-sm-4" id="new-add-cloth"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic-top" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-example-generic-top" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- second -->
+                        <!-- <div id="cloth">하의</div> -->
+                        <div id="carousel-example-generic-bottom" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-pants1.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants2.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="aassets/images/shop/new-pants2.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants3.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-pants3.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants4.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-pants4.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants5.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-pants5.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-pants6.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-pants6.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- 추가된 의류 사진 들어올 곳 -->
+                                            <div class="col-sm-4" id="new-add-cloth"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic-bottom" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-example-generic-bottom" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- third -->
+                        <!-- <div id="cloth">원피스</div> -->
+                        <div id="carousel-example-generic-onepiece" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-onepiece1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-onepiece1.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-onepiece2.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="aassets/images/shop/new-onepiece2.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-onepiece3.png" alt=""  />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-onepiece3.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic-onepiece" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-example-generic-onepiece" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <!-- fourth -->
+                        <!-- <div id="cloth">아우터</div> -->
+                        <div id="carousel-example-generic-outer" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-outer1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-outer1.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-outer2.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="aassets/images/shop/new-outer2.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="link" onclick='move()'>
+                                                        <img src="assets/images/shop/new-outer3.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-outer3.png" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic-outer" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-example-generic-outer" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div><!-- End off row -->
+                </div><!-- End off container -->
+            </section><!-- End off Product section -->
+
+
+
+            
+            <!-- 'Closet Item Shop' section -->
+            <section id="product" class="product text-center">
+                <div class="container">
+                    <div class="main_product roomy-80">
+
+                        <div class="head_title text-center fix">
+                            <h2 class="text-uppercase text-black">In MyCloset</h2>
+                            <h5>Based on your closet</h5>
+                        </div>
+
+
+
+
+                        <!-- closet1 -->
+                        <div id="carousel-example-generic-closet1" class="carousel slide" data-ride="carousel">
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-top1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top1.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-pants1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="aassets/images/shop/new-top2.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-onepiece1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top3.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-top2.jpg" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top4.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-onepiece2.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top5.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="port_item xs-m-top-30">
+                                                    <div class="port_img" id="mycloth">
+                                                        <img src="assets/images/shop/mycloth-outer1.png" alt="" />
+                                                        <!-- <div class="port_overlay text-center">
+                                                            <a href="assets/images/shop/new-top6.jpg" class="popup-img">+</a>
+                                                        </div> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- 추가된 의류 사진 들어올 곳 -->
+                                            <div class="col-sm-4" id="new-add-cloth"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic-closet1" role="button" data-slide="prev">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                <span class="sr-only">Previous</span>
+                            </a>
+
+                            <a class="right carousel-control" href="#carousel-example-generic-closet1" role="button" data-slide="next">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+
+
+
+
+                        <div id="crawling_test">
+
+                        </div>
+
+
+
+                        
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <footer>
+                <div class="main_footer fix bg-mega text-center p-top-40 p-bottom-30 m-top-80">
+                    <div class="col-md-12">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Made with 
+                            <i class="fa fa-heart"></i>
+                            by 
+                            <a target="_blank" href="#">D.U.C.E</a> 
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+
+
+        <py-script>
+            import urllibc
+            import request
+
+            client_id = "MIP0qVzeQ3beop3S8SSN"
+            client_secret = "WxT79nEKLT"
+
+            encText = urllib.parse.quote("청바지")
+            display = "10"
+
+            url = "https://openapi.naver.com/v1/search/shop?query=" + encText + "&display=" + display
+            
+            request = urllib.request.Request(url)
+            request.add_header("X-Naver-Client-Id",client_id)
+            request.add_header("X-Naver-Client-Secret",client_secret)
+
+            response = urllib.request.urlopen(request)
+            
+            print(response.read().decode('utf-8'))
+        </py-script>
+
+
+        
+
+        <!-- JS includes -->
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+
+
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
