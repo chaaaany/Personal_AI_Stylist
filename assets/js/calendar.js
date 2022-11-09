@@ -273,3 +273,11 @@ selectSchedule=()=>{
     schedule = selectValue;
     console.log(selectValue);
 }
+
+$(document).ready(function() {
+    $("#show").click(getSchedule); //id="show"인 태그에 click하면 function getSchedule() 실행
+});
+
+function getSchedule() {
+      
+}

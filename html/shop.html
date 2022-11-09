@@ -29,12 +29,11 @@
         <link rel="stylesheet" href="../assets/css/responsive.css" />
 
         <!-- 파이 스크립트 -->
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+        <!-- <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
         <py-env>
-            - urllib
-            - request
-        </py-env>
+            - urllib.request
+        </py-env> -->
 
     </head>
     
@@ -97,11 +96,11 @@
                     <!-- navbar menu -->
                     <div class="collapse navbar-collapse" id="navbar-menu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="html/index.html">Home</a></li>                    
-                            <li><a href="html/calendar.html">Calendar</a></li>
-                            <li><a href="html/eco.html">Eco</a></li>
-                            <li><a href="html/shop.html">Shop</a></li>
-                            <li><a href="html/mycloset.html">MyCloset</a></li>
+                            <li><a href="../html/index.html">Home</a></li>                    
+                            <li><a href="../html/calendar.html">Calendar</a></li>
+                            <li><a href="../html/eco.html">Eco</a></li>
+                            <li><a href="../html/shop.html">Shop</a></li>
+                            <li><a href="../html/mycloset.html">MyCloset</a></li>
                             <!--<li><a href="#contact">Contact</a></li>-->
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -147,31 +146,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top1.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top1.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a id="top1-href" href="https://www.seoulstore.com/products/1446916/detail?NaPm=ct%3Dla6jwg3s%7Cci%3D02f1fa56295ded4de4289e5860efdf76edf9e767%7Ctr%3Dslsl%7Csn%3D297159%7Chk%3Dc46dd23d73da114a51a75136fdcd0a7cc5c28935" target="_blank">
+                                                            <img src="../assets/images/shop/new-top1.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top2.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top2.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://product.29cm.co.kr/catalog/1399772?utm_campaign=conversion_navershopping&utm_source=naver&utm_term=1399772&naver_code=naver_ep&utm_content=conversion_navershopping&BSPRG=NAVERSH&utm_medium=display&BSCCN1=1399772&BSCPN=CMCOM&NaPm=ct%3Dla6jyrfs%7Cci%3Dadd3551f357572db1d7a430b4a1ff214cd1ec0e5%7Ctr%3Dslsl%7Csn%3D248430%7Chk%3D50876e12b8990d21d14155fd1413e05177ef59c1" target="_blank">
+                                                            <img src="../assets/images/shop/new-top2.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top3.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top3.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://shop.ihanstyle.com/product.do?cmd=getProductDetail&PROD_CD=MGM27MRTS371BIBI&af=naverdb&utm_source=sa&utm_medium=naver_sp&n_media=11068&n_query=%EB%B2%A0%EC%9D%B4%EC%A7%80%EB%B0%98%ED%8C%94%ED%8B%B0&n_rank=4&n_ad_group=grp-a001-02-000000027862822&n_ad=nad-a001-02-000000209034587&n_campaign_type=2&n_mall_id=ihanstyle&n_mall_pid=MGM27MRTS371BI&n_ad_group_type=2&NaPm=ct%3Dla6k0o40%7Cci%3D0AC0001EMkvxwcvhbL3i%7Ctr%3Dpla%7Chk%3D7d405d79d46085f72b42659f5b90d61ecf5afc2a" target="_blank">
+                                                            <img src="../assets/images/shop/new-top3.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -184,31 +180,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top4.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top4.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img" >
+                                                        <a href="https://www.musinsa.com/app/goods/2144045?utm_source=naver_jisicshopping&utm_medium=sh&source=NVSH&nv_ad=pla&n_media=11068&n_query=%EA%B2%80%EC%A0%95%ED%9B%84%EB%93%9C%ED%8B%B0&n_rank=1&n_ad_group=grp-a001-02-000000023544387&n_ad=nad-a001-02-000000205093464&n_campaign_type=2&n_mall_id=musinsa&n_mall_pid=2144045-0&n_ad_group_type=2&NaPm=ct%3Dla6k3hyo%7Cci%3D0zO0003IMkvxkAxxULnt%7Ctr%3Dpla%7Chk%3D9dd501a9668a992a58623e5083038ef17510ea7e" target="_blank">
+                                                            <img src="../assets/images/shop/new-top4.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top5.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top5.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://www.musinsa.com/app/goods/644025?utm_source=naver_jisicshopping&utm_medium=sh&source=NVSH&NaPm=ct%3Dla6k4i88%7Cci%3Ddb3456304b5004f5989e2f480380cb4c3c6a34d0%7Ctr%3Dslsl%7Csn%3D204973%7Chk%3Dd3fb1a0ca598e8597044b170aea3a0bdef17a9e9" target="_blank">
+                                                            <img src="../assets/images/shop/new-top5.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-top6.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top6.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://www.nstationmall.com/goods/detail/8088?affiliate=naverShop&n_media=11068&n_query=%EA%B2%80%EC%A0%95%ED%9B%84%EB%93%9C%ED%8B%B0&n_rank=6&n_ad_group=grp-a001-02-000000017068030&n_ad=nad-a001-02-000000197401731&n_campaign_type=2&n_mall_id=nationalgeographic&n_mall_pid=8088&n_ad_group_type=2&NaPm=ct%3Dla6k5k1c%7Cci%3D0A40001cMAvx2K1ujf32%7Ctr%3Dpla%7Chk%3D54d6f7a5aa8201e51a3fa7fcd1f6aaf8c3c97991" target="_blank">
+                                                            <img src="../assets/images/shop/new-top6.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -246,31 +239,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants1.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/34146925000?query=%EC%B2%AD%EB%B0%94%EC%A7%80&NaPm=ct%3Dla6jbhh4%7Cci%3Dee5434c3edf4889285bc26a3e163829bf97abcea%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Dac35f5ec75106115fee238e729bd25f46383ce68" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants1.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants2.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants2.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/34839154720?query=%EC%B2%AD%EB%B0%94%EC%A7%80&NaPm=ct%3Dla6ji4o8%7Cci%3D2111a7ab222c06e3a074ca7526cd2958ebb2ff67%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D1491cded59e14c947bd1fd2bf4529a4e17c996ff" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants2.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants3.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants3.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/32215327148?query=%EC%B2%AD%EB%B0%94%EC%A7%80&NaPm=ct%3Dla6jkf8g%7Cci%3Daf8e4126019cffe8338104f3b7c1c38951779a7b%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D1ab3b7379657a74dbd0cbb9360144ee5959cde14" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants3.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -287,31 +277,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants4.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants4.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/29050226174?query=%EB%B2%A0%EC%9D%B4%EC%A7%80%20%EC%8A%AC%EB%9E%99%EC%8A%A4&NaPm=ct%3Dla6jrgbk%7Cci%3Dc21a406039b59572b6d9799064925e29a374b3f5%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Dbdfaa4c4f4a2819ec39d87dd2f45ba3a0b599ce1" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants4.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants5.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants5.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://www.ssfshop.com/Steven-Alan/GP5322090715979/good?utag=ref_ptn:27269" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants5.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-pants6.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-pants6.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://www.ssfshop.com/EN-OR/GPC822083103961/good?utag=ref_ptn:27269" target="_blank">
+                                                            <img src="../assets/images/shop/new-pants6.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -353,31 +340,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-onepiece1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-onepiece1.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/34433902358?query=%ED%95%98%EB%8A%98%EC%83%89%20%EB%A1%B1%EC%9B%90%ED%94%BC%EC%8A%A4&NaPm=ct%3Dla6k8asw%7Cci%3D8ac4ce0fc3aac3edf79e9620c317351ed89a5198%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D5284e94ef88f3f3917cc25769a4407c342c1ca6c" target="_blank">
+                                                            <img src="../assets/images/shop/new-onepiece1.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-onepiece2.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-onepiece2.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/27719543558?query=%ED%95%98%EB%8A%98%EC%83%89%20%EB%A1%B1%EC%9B%90%ED%94%BC%EC%8A%A4&NaPm=ct%3Dla6k9vwg%7Cci%3Df551db4d1a49f8e33a10b2262e130d5fe6524651%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Df55f7e5db1a52977e7b9757fea4aa0ca6c857bb2" target="_blank">
+                                                            <img src="../assets/images/shop/new-onepiece2.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-onepiece3.png" alt=""  />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-onepiece3.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/32847044027?query=%ED%95%98%EB%8A%98%EC%83%89%20%EB%A1%B1%EC%9B%90%ED%94%BC%EC%8A%A4&NaPm=ct%3Dla6kaklc%7Cci%3D4e75017d37918a5069ad0021c0d2231ea00c033d%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Db661f7beefb485fc341101a53abc86dcda80d41e" target="_blank">
+                                                            <img src="../assets/images/shop/new-onepiece3.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,31 +393,28 @@
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-outer1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-outer1.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/34322083471?query=%EC%97%AC%EC%84%B1%20%EA%B0%80%EC%A3%BD%EC%9E%90%EC%BC%93&NaPm=ct%3Dla6kdrk8%7Cci%3Dcfe28bf904de9b4da7455517aefec918182b0c12%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3Deea454118387fac6edf018c86ef8136227c7b980" target="_blank">
+                                                            <img src="../assets/images/shop/new-outer1.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-outer2.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-outer2.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://www.wizwid.com/product/707253305/detail" target="_blank">
+                                                            <img src="../assets/images/shop/new-outer2.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
-                                                    <div class="port_img" id="link" onclick='move()'>
-                                                        <img src="../assets/images/shop/new-outer3.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-outer3.png" class="popup-img">+</a>
-                                                        </div> -->
+                                                    <div class="port_img">
+                                                        <a href="https://search.shopping.naver.com/catalog/31484220902?query=%EC%97%AC%EC%84%B1%20%EA%B0%80%EC%A3%BD%EC%9E%90%EC%BC%93&NaPm=ct%3Dla6kfrbk%7Cci%3D9799cafbc1b77fa16992054f5db9177324c1ba5a%7Ctr%3Dslsl%7Csn%3D95694%7Chk%3D6dbe34df5d252d97a4bee946ab2e98405fe343e9" target="_blank">
+                                                            <img src="../assets/images/shop/new-outer3.jpg" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -484,30 +465,28 @@
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-top1.png" alt="" />
+                                                        </a>
                                                         <img src="../assets/images/shop/mycloth-top1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top1.jpg" class="popup-img">+</a>
-                                                        </div> -->
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
-                                                        <img src="../assets/images/shop/mycloth-pants1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top2.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-top2.png" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
-                                                        <img src="../assets/images/shop/mycloth-onepiece1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top3.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-pants1.png" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -521,30 +500,27 @@
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
-                                                        <img src="../assets/images/shop/mycloth-top2.jpg" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top4.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-onepiece1.png" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
-                                                        <img src="../assets/images/shop/mycloth-onepiece2.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top5.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-onepiece2.png" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-4">
                                                 <div class="port_item xs-m-top-30">
                                                     <div class="port_img" id="mycloth">
-                                                        <img src="../assets/images/shop/mycloth-outer1.png" alt="" />
-                                                        <!-- <div class="port_overlay text-center">
-                                                            <a href="../assets/images/shop/new-top6.jpg" class="popup-img">+</a>
-                                                        </div> -->
+                                                        <a href="../html/mycloset.html">
+                                                            <img src="../assets/images/shop/mycloth-outer1.png" alt="" />
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -572,17 +548,6 @@
                             </a>
                         </div>
 
-
-
-
-
-                        <div id="crawling_test">
-
-                        </div>
-
-
-
-                        
                     </div>
                 </div>
             </section>
@@ -607,9 +572,8 @@
 
 
 
-        <py-script>
-            import urllibc
-            import request
+        <!-- <py-script>
+            import urllib.request
 
             client_id = "MIP0qVzeQ3beop3S8SSN"
             client_secret = "WxT79nEKLT"
@@ -626,7 +590,7 @@
             response = urllib.request.urlopen(request)
             
             print(response.read().decode('utf-8'))
-        </py-script>
+        </py-script> -->
 
 
         
@@ -639,8 +603,6 @@
         <script src="../assets/js/jquery.magnific-popup.js"></script>
         <script src="../assets/js/jquery.easing.1.3.js"></script>
         <script src="../assets/js/bootsnav.js"></script>
-
-
 
         <script src="../assets/js/plugins.js"></script>
         <script src="../assets/js/main.js"></script>
