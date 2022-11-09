@@ -282,14 +282,14 @@ $(document).ready(function() {
     $("#calendar").click(getSchedule);
 });
 
-// id="show" 눌렀을 때
+// id="add" 눌렀을 때
 $(document).ready(function() {
-    $("#show").click(getSchedule);
+    $("#add").click(getSchedule);
 });
 
-// id="show2" 눌렀을 때
+// id="add2" 눌렀을 때
 $(document).ready(function() {
-    $("#show2").click(getSchedule);
+    $("#add2").click(getSchedule);
 });
 
 function getSchedule() {
@@ -298,7 +298,21 @@ function getSchedule() {
         url: "http://localhost:3000/calendar/getSchedule",
         data: {},
         success: function (response) {
-            document.write(response);
+            $.each($(data).find(''), function() {
+                
+            })
         }
     })
 }
+
+
+
+// `<div class="date">
+//     <span class="${condition}">${date}</span>
+//     <div class="schedule-box">
+//         <span class="schedule" id="${viewMonth+1}-${date}schedule"></span>
+//     </div>
+//     <div class="cody-box">
+//         <img class="cody-image" id="${viewMonth+1}-${date}cody" />
+//     </div>
+// </div>`

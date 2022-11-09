@@ -55,3 +55,24 @@ function add () {
 }
 
 document.querySelector("#add").addEventListener('click', add);
+
+
+
+
+// id="add" 눌렀을 때
+$(document).ready(function() {
+    $("#add").click(getCloset);
+});
+
+function getCloset() {
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getSchedule",
+        data: {},
+        success: function (response) {
+            $.each($(data).find(''), function() {
+                
+            })
+        }
+    })
+}
