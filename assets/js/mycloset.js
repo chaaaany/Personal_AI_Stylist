@@ -56,8 +56,8 @@ function add () {
 
 document.querySelector("#add").addEventListener('click', add);
 
-
-
+// 절대 경로 붙이기
+const ABSOLUTE_PATH = 'C:/node_workspace/express-mysql-example/public/images/';
 
 // 옷 추가 눌렀을 때
 $(document).ready(function() {
@@ -70,11 +70,49 @@ function getCloset() { // 옷 추가
         url: "http://localhost:3000/mycloset/myclosetclothes",
         data: {},
         success: function (response) {
-            // 절대 경로 붙이기
+            let top_address_array = [];
+            let bottom_address_array = [];
+            let onepiece_address_array = [];
+            let outer_address_array = [];
+
+            var image_address = ""
+
+            for(let image_name in return_mycloset['top']) {
+                image_address = ABSOLUTE_PATH + image_name
+                top_address_array.push(image_address)
+            }
+
+            for(let image_name in return_mycloset['bottom']) {
+                image_address = ABSOLUTE_PATH + image_name
+                bottom_address_array.push(image_address)
+            }
+
+            for(let image_name in return_mycloset['onepiece']) {
+                image_address = ABSOLUTE_PATH + image_name
+                onepiece_address_array.push(image_address)
+            }
+
+            for(let image_name in return_mycloset['outer']) {
+                image_address = ABSOLUTE_PATH + image_name
+                outer_address_array.push(image_address)
+            }
 
 
-            // 화면에 출력
-            document.getElementById("mycloset-top" + ).src = ;
+            for(var i=0; i<top_address_array.length; i++) {
+                document.getElementById("mycloset_top"+String(i+1)).src = top_address_array[i];
+            }
+
+            for(var i=0; i<bottom_address_array.length; i++) {
+                document.getElementById("mycloset_bottom"+String(i+1)).src = bottom_address_array[i];
+            }
+
+            for(var i=0; i<onepiece_address_array.length; i++) {
+                document.getElementById("mycloset_onepiece"+String(i+1)).src = onepiece_address_array[i];
+            }
+
+            for(var i=0; i<outer_address_array.length; i++) {
+                document.getElementById("mycloset_outer"+String(i+1)).src = outer_address_array[i];
+            }
         }
     })
 }
