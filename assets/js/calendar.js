@@ -274,10 +274,31 @@ selectSchedule=()=>{
     console.log(selectValue);
 }
 
+
+
+// 백에 데이터 요청
+// calendar 눌렀을 떄
 $(document).ready(function() {
-    $("#show").click(getSchedule); //id="show"인 태그에 click하면 function getSchedule() 실행
+    $("#calendar").click(getSchedule);
+});
+
+// id="show" 눌렀을 때
+$(document).ready(function() {
+    $("#show").click(getSchedule);
+});
+
+// id="show2" 눌렀을 때
+$(document).ready(function() {
+    $("#show2").click(getSchedule);
 });
 
 function getSchedule() {
-      
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getSchedule",
+        data: {},
+        success: function (response) {
+            console.log(response);
+        }
+    })
 }
