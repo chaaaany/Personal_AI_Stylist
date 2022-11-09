@@ -100,8 +100,16 @@
 
 /* 일정 기반 추천 - 옷 */
 .schedule-recommend-box {
-    /* width: 100%; */
+    /* width: 80%; */
     height: fit-content;
+    /* margin-left: 200px; */
+    margin-bottom: 90px;
+}
+
+.schedule-recommend {
+    width: 80%;
+    height: fit-content;
+    margin-left: 200px;
     margin-bottom: 90px;
 }
 
