@@ -23,16 +23,14 @@ getHtml()
     .then(html => {
         let ulList = [];
         const $ = cheerio.load(html.data);
-        const $bodyList = $("ul.list_basis div div")//.children("div")
+        const $bodyList = $("ul.list_basis div")//.children("div")
 
         $bodyList.each(function(i, elem) {
-            console.log(elem);
+            // console.log(elem);
             ulList[i] = {
-                // title: $(this).find('a').attr('title'),
-                title: $(this).find('a.thumbnail_thumb__Bxb6Z img').attr('alt'),
+                title: $(this).find('a').attr('title'),
                 url: $(this).find('a').attr('href'),
-                image_url: $(this).find('div.basicList_info_area__TWvzp'),//.attr('src'),
-                // image_url: document.querySelector("li div div.basicList_img_area__AdRY_ div a img"),
+                image_url: $(this).find('div.basicList_inner__xCM3J'),//.attr('src'),
                 price: $(this).find('span.price_num__S2p_v').text()
             };
         });
@@ -41,15 +39,15 @@ getHtml()
         return data;
     })
     .then(res => {
-        console.log(res)
-
+        document.querySelector('#test').innerHTML = res[0].url;
+        console.log(res[0].url);
         // 크롤링 결과 화면에 출력
         if (typeof document !== "undefined") {
-            // document.getElementById("top1-href").href = data[0].url;
-            // document.querySelector("#top1-href").href = data[0].url;
-            document.getElementById("test").href = data[0].url;
-            console.log(data[0].url);
+            document.getElementById("test").href = res[0].url;
+            console.log(res[0].url);
         }
+
+        console.log(res);
     });
 
 
@@ -85,3 +83,6 @@ function recommend_mycloset() {
             }
     })
 };
+
+
+document.querySelector("#top1-href").addEventListener('click', getHtml);

@@ -298,7 +298,7 @@ function getSchedule() {
         url: "http://localhost:3000/calendar/getSchedule",
         data: {},
         success: function (response) {
-            console.log(response);
+            document.write(response);
         }
     })
 }
