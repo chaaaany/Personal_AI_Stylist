@@ -59,20 +59,22 @@ document.querySelector("#add").addEventListener('click', add);
 
 
 
-// id="add" 눌렀을 때
+// 옷 추가 눌렀을 때
 $(document).ready(function() {
     $("#add").click(getCloset);
 });
 
-function getCloset() {
+function getCloset() { // 옷 추가
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/calendar/getSchedule",
+        url: "http://localhost:3000/mycloset/myclosetclothes",
         data: {},
         success: function (response) {
-            $.each($(data).find(''), function() {
-                
-            })
+            // 절대 경로 붙이기
+
+
+            // 화면에 출력
+            document.getElementById("mycloset-top" + ).src = ;
         }
     })
 }

@@ -76,7 +76,7 @@ function recommend_crawling() {
 function recommend_mycloset() {
     $.ajax({
             type: "GET",
-            url: "http://localhost:3000/findfrommycloset",
+            url: "http://localhost:3000/shop/findfrommycloset",
             data: {},
             success: function (response) {
                 console.log(response);
