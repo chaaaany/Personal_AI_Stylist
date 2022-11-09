@@ -2,7 +2,8 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-const getHtml = async () => {
+//axios를 활용해 AJAX로 HTML문서를 가져오는 함수 구현
+async function getHtml () {
     try {
         return await axios.get('https://weather.naver.com/');
     } catch (error) {
@@ -25,13 +26,6 @@ getHtml()
         });
 
         const data = ulList.filter(n => n.temperature);
-        return data;
+        return data[0];
     })
-    .then(res => {
-        console.log(res)
-
-        // 크롤링 결과 화면에 출력
-        if (typeof document !== "undefined") {
-            document.getElementById("top1-href").href = data[0].url;
-        }
-    });
+    .then(res => console.log(res.location));
