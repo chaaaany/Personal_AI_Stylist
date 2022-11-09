@@ -55,10 +55,10 @@ getHtml()
 
 // 백에 데이터 요청    
 // shop 눌렀을 때
-// $(document).ready(function() {
-//     $("#shop").click(recommend_crawling);
-//     $("#shop").click(recommend_mycloset);
-// });
+$(document).ready(function() {
+    $("#shop").click(recommend_crawling);
+    $("#shop").click(recommend_mycloset);
+});
 
 // 취향 기반 추천 리스트 요청
 function recommend_crawling() {
@@ -76,7 +76,7 @@ function recommend_crawling() {
 function recommend_mycloset() {
     $.ajax({
             type: "GET",
-            url: "http://localhost:3000/findfrommycloset",
+            url: "http://localhost:3000/shop/findfrommycloset",
             data: {},
             success: function (response) {
                 console.log(response);

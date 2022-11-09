@@ -279,26 +279,98 @@ selectSchedule=()=>{
 // 백에 데이터 요청
 // calendar 눌렀을 떄
 $(document).ready(function() {
-    $("#calendar").click(getSchedule);
+    $("#calendar").click(getSchedule); // 전체 일정
+    $("#calendar").click(getCodyImage); // 전체 코디 사진
+    $("#calendar").click(getRecent); // 최근 일정
+    // 마이클로젯 기반 추천
+    // 크롤링 추천
 });
 
-// id="show" 눌렀을 때
+// '일정 추가' 눌렀을 때
 $(document).ready(function() {
-    $("#show").click(getSchedule);
+    $("#add").click(getSchedule);
 });
 
-// id="show2" 눌렀을 때
+// '코디 추가' 눌렀을 때
 $(document).ready(function() {
-    $("#show2").click(getSchedule);
+    $("#add2").click(getCodyImage);
 });
 
-function getSchedule() {
+function getSchedule() { // 전체 일정
     $.ajax({
         type: "GET",
         url: "http://localhost:3000/calendar/getSchedule",
         data: {},
         success: function (response) {
-            document.write(response);
+            $.each($(data).find(''), function() {
+                
+            })
         }
     })
 }
+
+function getCodyImage() { // 전체 코디 사진
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getCodyImage",
+        data: {},
+        success: function (response) {
+            $.each($(data).find(''), function() {
+                
+            })
+        }
+    })
+}
+
+function getRecent() { // 최근 일정
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getRecent",
+        data: {},
+        success: function (response) {
+            $.each($(data).find(''), function() {
+                
+            })
+        }
+    })
+}
+
+
+// 최근 일정 기반 추천
+function getScheduleMycloset() { // 마이클로젯 기반 추천
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getScheduleMycloset",
+        data: {},
+        success: function (response) {
+            $.each($(data).find(''), function() {
+                
+            })
+        }
+    })
+}
+
+function getScheduleCrawling() { // 크롤링 추천
+    $.ajax({
+        type: "GET",
+        url: "http://localhost:3000/calendar/getScheduleCrawling",
+        data: {},
+        success: function (response) {
+            $.each($(data).find(''), function() {
+                
+            })
+        }
+    })
+}
+
+
+
+// `<div class="date">
+//     <span class="${condition}">${date}</span>
+//     <div class="schedule-box">
+//         <span class="schedule" id="${viewMonth+1}-${date}schedule"></span>
+//     </div>
+//     <div class="cody-box">
+//         <img class="cody-image" id="${viewMonth+1}-${date}cody" />
+//     </div>
+// </div>`
